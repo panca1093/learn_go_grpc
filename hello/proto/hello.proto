@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package hello;
+
+option go_package = "github.com/learn_go_grpc/hello/proto";
+
+message Hello {
+  int64 id = 1;
+}
+
+service HelloService {}
