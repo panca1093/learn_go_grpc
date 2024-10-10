@@ -8,7 +8,7 @@ import (
 	pb "github.com/learn_go_grpc/hello/proto"
 )
 
-var addr = "0.0.0.0:5000"
+var addr = "0.0.0.0:5050"
 
 type Server struct {
 	pb.HelloServiceServer

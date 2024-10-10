@@ -7,7 +7,7 @@ import (
 )
 
 func (s *Server) Hello(ctx context.Context, in *pb.HelloReq) (*pb.HelloRes, error) {
-	log.Println("Hello was invoked: ", in)
+	log.Println("Hello function was invoked: ", in)
 
 	return &pb.HelloRes{
 		Result: "Hello " + in.Name,
