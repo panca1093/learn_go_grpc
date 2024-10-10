@@ -4,8 +4,14 @@ package hello;
 
 option go_package = "github.com/learn_go_grpc/hello/proto";
 
-message Hello {
-  int64 id = 1;
+message HelloReq {
+  string name = 1;
 }
 
-service HelloService {}
+message HelloRes {
+  string result = 1;
+}
+
+service HelloService {
+  rpc Hello(HelloReq) returns (HelloRes);
+}
